@@ -16,12 +16,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void cambiartexto(View v){
-        String aux;
-        fstTxtView = findViewById(R.id.den);
-        sndTxtView = findViewById(R.id.ise);
 
-        aux = sndTxtView.getText().toString();
-        sndTxtView.setText(fstTxtView.getText());
-        fstTxtView.setText(aux);
     }
 }
