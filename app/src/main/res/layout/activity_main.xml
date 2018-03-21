@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context="com.eguizabal.laboratorio2.MainActivity">
 
-        <android.support.v7.widget.LinearLayoutCompat
+    <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -31,69 +31,102 @@
                     />
         </android.support.v7.widget.LinearLayoutCompat>
 
-        <android.support.v7.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            >
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent">
-                        <TableRow>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s1"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s2"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s3"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s4"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s5"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s6"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s7"
-                                    android:textSize="16dp"/>
-                        </TableRow>
-                        <TableRow>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s1"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s2"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s3"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s4"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s5"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s6"
-                                    android:textSize="16dp"/>
-                                <android.support.v7.widget.AppCompatAutoCompleteTextView
-                                    android:text="s7"
-                                    android:textSize="16dp"/>
-                        </TableRow>
-                </TableLayout>
-        </android.support.v7.widget.LinearLayoutCompat>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <android.support.v7.widget.LinearLayoutCompat
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <TableRow>
 
-        </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s1"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s2"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s3"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s4"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s5"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s6"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:layout_width="wrap_content"
+                android:text="s7"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s1"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s2"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s3"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s4"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s5"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s6"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="s7"
+                android:textSize="16dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TableRow>
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="m1"
+                android:textSize="15dp"/>
+            <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:text="m2"
+                android:textSize="15dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TableRow>
+            <Button
+                android:text="punto j1"/>
+            <Button
+                android:text="punto j2"/>
+        </TableRow>
+    </TableLayout>
 
 
 </LinearLayout>
