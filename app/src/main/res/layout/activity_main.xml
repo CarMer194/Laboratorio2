@@ -34,7 +34,7 @@
     </android.support.v7.widget.LinearLayoutCompat>
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TableRow>
@@ -102,17 +102,20 @@
     </TableLayout>
 
     <TableLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp">
-        <TableRow>
+
+        <TableRow android:layout_width="74dp">
+
             <android.support.v7.widget.AppCompatAutoCompleteTextView
                 android:text="m1"
-                android:textSize="15dp"/>
+                android:textSize="15sp" />
+
             <android.support.v7.widget.AppCompatAutoCompleteTextView
                 android:text="m2"
-                android:textSize="15dp"/>
+                android:textSize="15sp" />
         </TableRow>
 
     </TableLayout>
@@ -126,12 +129,14 @@
         <TableRow>
 
             <Button
+                android:id="@+id/botonJ1"
                 android:layout_width="155dp"
                 android:padding="20dp"
                 android:text="punto j1"
                 android:layout_marginRight="4dp"/>
 
             <Button
+                android:id="@+id/botonJ2"
                 android:layout_width="157dp"
                 android:padding="20dp"
                 android:text="punto j2"
