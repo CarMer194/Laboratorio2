@@ -156,12 +156,14 @@
         <TableRow android:layout_width="74dp">
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/juego_j1"
                 android:text="@string/juego_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="15sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/juego_j2"
                 android:text="@string/juego_j2"
                 android:width="0dp"
                 android:layout_weight="1"

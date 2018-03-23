@@ -43,6 +43,13 @@ class Juego {
         this.juegoJ2 = juegoJ2;
     }
 
+    public int getJuegoG1() {
+        return juegoG1;
+    }
+
+    public int getJuegoG2() {
+        return juegoG2;
+    }
 
     public void puntoJ1(){
         contadorJ1++;
@@ -67,17 +74,17 @@ class Juego {
             juegoJ1="-";
             juegoJ2="-";
             deuce=false;
-            set++;
+            contadorJ2=0;
+            contadorJ1=0;
             juegoG1++;
         }
         if (contadorJ1==4 && !deuce){
             juegoJ1="-";
             juegoJ2="-";
             contadorJ1=0;
-            set++;
+            contadorJ2=0;
             juegoG1++;
         }
-
     }
 
     public void puntoJ2(){
@@ -85,7 +92,7 @@ class Juego {
         if (contadorJ2==1){
             juegoJ2 = "15";
         }
-        if (contadorJ1==2){
+        if (contadorJ2==2){
             juegoJ2 = "30";
         }
         if (contadorJ2==3){
@@ -103,17 +110,41 @@ class Juego {
             juegoJ1="-";
             juegoJ2="-";
             deuce=false;
-            set++;
+            contadorJ2=0;
+            contadorJ1=0;
             juegoG2++;
         }
         if (contadorJ2==4 && !deuce){
             juegoJ1="-";
             juegoJ2="-";
             contadorJ2=0;
-            set++;
+            contadorJ1=0;
             juegoG2++;
         }
+    }
 
+    protected void terminarSet(){
+        if(juegoG1==6 && juegoG2<5){
+            set++;
+            juegoG1=0;
+            juegoG2=0;
+            contadorJ2=0;
+            contadorJ1=0;
+        }
+        if(juegoG2==6 && juegoG1<5){
+            set++;
+            juegoG1=0;
+            juegoG2=0;
+            contadorJ2=0;
+            contadorJ1=0;
+        }
+        if(juegoG1==7 || juegoG2==7){
+            set++;
+            juegoG1=0;
+            juegoG2=0;
+            contadorJ2=0;
+            contadorJ1=0;
+        }
     }
 
 
