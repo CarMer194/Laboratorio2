@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">laboratorio2</string>
+    <string name="jugador_1">jugador 1</string>
+    <string name="jugador_2">jugador 2</string>
+    <string name="set_uno_j1">-</string>
+    <string name="set_dos_j2">-</string>
+    <string name="set_tres_j1">-</string>
+    <string name="set_dos_j1">-</string>
+    <string name="set_cuatro_j1">-</string>
+    <string name="set_cinco_j1">-</string>
+    <string name="set_seis_j1">-</string>
+    <string name="set_siete_j1">-</string>
+    <string name="set_uno_j2">-</string>
+    <string name="set_tres_j2">-</string>
+    <string name="set_cuatro_j2">-</string>
+    <string name="set_cinco_j2">-</string>
+    <string name="set_seis_j2">-</string>
+    <string name="set_siete_j2">-</string>
+    <string name="juego_j1">-</string>
+    <string name="juego_j2">-</string>
 </resources>
