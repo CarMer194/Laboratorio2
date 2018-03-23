@@ -18,4 +18,8 @@
     <string name="set_siete_j2">-</string>
     <string name="juego_j1">-</string>
     <string name="juego_j2">-</string>
+    <string name="punto_j1">punto j1</string>
+    <string name="punto_j2">punto j2</string>
+    <string name="ganador">ganador:</string>
+    <string name="borrar">borrar</string>
 </resources>
