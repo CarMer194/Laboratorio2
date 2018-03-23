@@ -8,7 +8,7 @@ class Juego {
     private Integer set;
     private String juegoJ1, juegoJ2;
     private int contadorJ1=0, contadorJ2=0, juegoG1, juegoG2;
-    private boolean deuce;
+    private boolean deuce, tie;
 
     public Juego() {
         set = 1;
@@ -17,6 +17,7 @@ class Juego {
         deuce=false;
         juegoG1=0;
         juegoG2=0;
+        tie=false;
     }
 
     public Integer getSet() {
@@ -53,6 +54,9 @@ class Juego {
 
     public void puntoJ1(){
         contadorJ1++;
+        if (deuce && contadorJ2==4){
+            contadorJ2--;
+        }
         if (contadorJ1==1){
             juegoJ1 = "15";
         }
@@ -62,15 +66,17 @@ class Juego {
         if (contadorJ1==3){
             juegoJ1 = "40";
         }
-        if (contadorJ1==4 && contadorJ2==4){
+        if (contadorJ1==3 && contadorJ2==3){
             deuce = true;
             juegoJ1="40";
+            juegoJ2="40";
         }
-        if (deuce && contadorJ1==5){
+        if (deuce && contadorJ1==4){
             juegoJ1="AD";
+            contadorJ2--;
             juegoJ2="-";
         }
-        if (contadorJ1==6 && deuce){
+        if (contadorJ1==5 && deuce){
             juegoJ1="-";
             juegoJ2="-";
             deuce=false;
@@ -89,6 +95,9 @@ class Juego {
 
     public void puntoJ2(){
         contadorJ2++;
+        if (deuce && contadorJ1==4){
+            contadorJ1--;
+        }
         if (contadorJ2==1){
             juegoJ2 = "15";
         }
@@ -98,15 +107,17 @@ class Juego {
         if (contadorJ2==3){
             juegoJ2 = "40";
         }
-        if (contadorJ1==4 && contadorJ2==4){
+        if (contadorJ1==3 && contadorJ2==3){
             deuce = true;
             juegoJ2="40";
+            juegoJ1="40";
         }
-        if (deuce && contadorJ2==5){
+        if (deuce && contadorJ2==4){
             juegoJ2="AD";
             juegoJ1="-";
+            contadorJ1--;
         }
-        if (contadorJ2==6 && deuce){
+        if (contadorJ2==5 && deuce){
             juegoJ1="-";
             juegoJ2="-";
             deuce=false;
