@@ -9,7 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Juego juego;
     private String auxString;
-    private TextView aux;
+    private TextView aux, aux2, aux3, auxW;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         actualizarSetJ1();
         auxString="";
         juego.terminarSet();
+        terminarJuego();
 
     }
     public void juegoJ2(View v){
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         actualizarSetJ2();
         auxString="";
         juego.terminarSet();
+        terminarJuego();
     }
 
     public void actualizarSetJ1(){
@@ -113,8 +115,40 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void terminarJuego(){
+        String gan;
+        if (juego.isGanador()){
+            aux2= findViewById(R.id.botonJ1);
+            aux3= findViewById(R.id.botonJ2);
+            aux2.setEnabled(false);
+            aux3.setEnabled(false);
+            if(juego.getWin()==1){
+                auxW=findViewById(R.id.jugador1);
+                gan="Ganador: "+auxW.getText().toString();
+                auxW=findViewById(R.id.ganadores);
+                auxW.setText(gan);
+            }
+            if(juego.getWin()==2){
+                auxW=findViewById(R.id.jugador2);
+                gan="Ganador: "+auxW.getText().toString();
+                auxW=findViewById(R.id.ganadores);
+                auxW.setText(gan);
+            }
+        }
+        else{
+            aux2= findViewById(R.id.botonJ1);
+            aux3= findViewById(R.id.botonJ2);
+            aux2.setEnabled(true);
+            aux3.setEnabled(true);
+        }
+    }
+
     public void borrar(View v){
         juego = new Juego();
+        aux2= findViewById(R.id.botonJ1);
+        aux3= findViewById(R.id.botonJ2);
+        aux2.setEnabled(true);
+        aux3.setEnabled(true);
 
     }
 

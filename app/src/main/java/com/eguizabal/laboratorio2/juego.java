@@ -1,5 +1,7 @@
 package com.eguizabal.laboratorio2;
 
+import android.widget.TextView;
+
 /**
  * Created by Carlos on 22/3/2018.
  */
@@ -7,8 +9,9 @@ package com.eguizabal.laboratorio2;
 class Juego {
     private Integer set;
     private String juegoJ1, juegoJ2;
-    private int contadorJ1=0, contadorJ2=0, juegoG1, juegoG2;
-    private boolean deuce, tie;
+    private int contadorJ1=0, contadorJ2=0, juegoG1, juegoG2, setJ1,setJ2, win;
+    private boolean deuce, tie, ganador;
+    private TextView aux;
 
     public Juego() {
         set = 1;
@@ -18,6 +21,10 @@ class Juego {
         juegoG1=0;
         juegoG2=0;
         tie=false;
+        setJ1=0;
+        setJ2=0;
+        ganador=false;
+        win=0;
     }
 
     public Integer getSet() {
@@ -141,6 +148,7 @@ class Juego {
             juegoG2=0;
             contadorJ2=0;
             contadorJ1=0;
+            setJ1++;
         }
         if(juegoG2==6 && juegoG1<5){
             set++;
@@ -148,6 +156,7 @@ class Juego {
             juegoG2=0;
             contadorJ2=0;
             contadorJ1=0;
+            setJ2++;
         }
         if(juegoG1==7 || juegoG2==7){
             set++;
@@ -155,8 +164,32 @@ class Juego {
             juegoG2=0;
             contadorJ2=0;
             contadorJ1=0;
+            if (juegoG1==7){
+                setJ1++;
+            }
+            if (getJuegoG2()==7){
+                setJ2++;
+            }
+        }
+        winner();
+    }
+    protected void winner(){
+
+        if (setJ1==4){
+            ganador=true;
+            win=1;
+        }
+        if (setJ2==4){
+            ganador=true;
+            win=2;
         }
     }
 
+    public boolean isGanador() {
+        return ganador;
+    }
 
+    public int getWin() {
+        return win;
+    }
 }

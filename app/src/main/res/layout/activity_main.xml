@@ -199,8 +199,10 @@
     </TableLayout>
 
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ganadores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
         android:textSize="20sp"
         android:layout_marginTop="8dp"
         android:text="@string/ganador"
