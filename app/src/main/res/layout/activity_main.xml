@@ -43,42 +43,49 @@
         <TableRow>
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set1_j1"
                 android:text="@string/set_uno_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set2_j1"
                 android:text="@string/set_dos_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set3_j1"
                 android:text="@string/set_tres_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set4_j1"
                 android:text="@string/set_cuatro_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set5_j1"
                 android:text="@string/set_cinco_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set6_j1"
                 android:text="@string/set_seis_j1"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set7_j1"
                 android:layout_width="wrap_content"
                 android:text="@string/set_siete_j1"
                 android:width="0dp"
@@ -89,42 +96,49 @@
         <TableRow>
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set1_j2"
                 android:text="@string/set_uno_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set2_j2"
                 android:text="@string/set_dos_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set3_j2"
                 android:text="@string/set_tres_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set4_j2"
                 android:text="@string/set_cuatro_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set5_j2"
                 android:text="@string/set_cinco_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set6_j2"
                 android:text="@string/set_seis_j2"
                 android:width="0dp"
                 android:layout_weight="1"
                 android:textSize="17sp" />
 
             <android.support.v7.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/set7_j2"
                 android:text="@string/set_siete_j2"
                 android:width="0dp"
                 android:layout_weight="1"
@@ -169,14 +183,16 @@
                 android:layout_width="155dp"
                 android:padding="20dp"
                 android:text="@string/punto_j1"
-                android:layout_marginRight="4dp"/>
+                android:layout_marginRight="4dp"
+                android:onClick="juegoJ1"/>
 
             <Button
                 android:id="@+id/botonJ2"
                 android:layout_width="157dp"
                 android:padding="20dp"
                 android:text="@string/punto_j2"
-                android:layout_marginLeft="4dp"/>
+                android:layout_marginLeft="4dp"
+                android:onClick="juegoJ2"/>
         </TableRow>
     </TableLayout>
 
