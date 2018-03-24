@@ -1,5 +1,6 @@
 package com.eguizabal.laboratorio2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -144,11 +145,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void borrar(View v){
-        juego = new Juego();
-        aux2= findViewById(R.id.botonJ1);
-        aux3= findViewById(R.id.botonJ2);
-        aux2.setEnabled(true);
-        aux3.setEnabled(true);
+        juego= new Juego();
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
 
     }
 
